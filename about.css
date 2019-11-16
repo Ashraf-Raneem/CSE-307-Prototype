@@ -1,0 +1,29 @@
+html,body {
+    height: 100%;
+}
+.container {
+    padding-top: 80px ;
+    margin: 0px auto;
+}
+.section {
+    column-width: 90%;
+    padding: 15px;
+}
+.footer {
+    font-weight: bold;
+}
+/*footer {
+    background: #222; 
+    color: #888; 
+    text-align: center; 
+}
+*/
+footer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: auto;
+    background: #222; 
+    color: #888; 
+    text-align: center; 
+  }

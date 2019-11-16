@@ -1,3 +1,3 @@
-$(".submitBtn").click(function(){
+$("#submitBtn").click(function(){
     window.open("dashboard.html"); 
 })
