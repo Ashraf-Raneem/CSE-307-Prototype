@@ -1,5 +1,8 @@
 $("#success").hide();
 $(".btnSubmit").click(function(){
-    location.reload();
-    $("#success").show(); 
+    window.alert("The information has been added to the database");
+
+})
+$(".btnClear").click(function(){
+    location.reload(0); 
 })

@@ -1,0 +1,13 @@
+html,body {
+    height: 100%;
+}
+
+footer {
+    position: relative;
+    right: 0;
+    left: 0;
+    bottom: auto;
+    background: #222; 
+    color: #888; 
+    text-align: center; 
+  }

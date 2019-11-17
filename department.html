@@ -8,13 +8,15 @@
     <link type="text/css" href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <link type="text/css"  href="bootstrap/css/bootstrap.min.css" rel="stylesheet" >
     <link type="text/css" href="bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
+
+    <link type="text/css" href="about.css" rel="stylesheet">
    
     <title>Document</title>
 
 </head>
 <body>
     <nav class="navbar navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">IRAS</a>
+        <a class="navbar-brand" href="dashboard.html">IRAS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,10 +29,13 @@
               <a class="nav-link" href="studentRegistration.html">Register Student</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">View Deppartment Details</a>
+                <a class="nav-link" href="faculty.html">Faculty Course Registration</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="department.html">View Deppartment Details</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="about.html">About</a>
               </li>
           </ul>
         </div>
@@ -126,127 +131,16 @@
 		    });
 			</script>
         </div>
-        <div class="myChart01">	
-                <canvas id="chartBarTotalLand" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
-                <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    
-                <script>
-                    var ctx = document.getElementById("chartBarTotalLand").getContext('2d');
-                    var myChart = new Chart(ctx, {
-                    type: 'bar',
-                    data: {
-                        labels: ['BBA'],
-                        datasets: 
-                        [{
-                            label: 'Students',
-                            data: ['550'],
-                            backgroundColor: 'transparent',
-                            borderColor:'rgba(0,128,0)',
-                            borderWidth: 3
-                        }]
-                    },
-                 
-                    options: {
-                        scales: {scales:{yAxes: [{beginAtZero: false}], xAxes: [{autoskip: true, maxTicketsLimit: 20}]}},
-                        tooltips:{mode: 'index'},
-                        legend:{display: true, position: 'top', labels: {fontColor: 'rgb(255,255,255)', fontSize: 16}}
-                    }
-                });
-                </script>
-            </div>
-            <div class="myChart02">	
-                    <canvas id="chartBarTotalLand" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
-                    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
         
-                    <script>
-                        var ctx = document.getElementById("chartBarTotalLand").getContext('2d');
-                        var myChart = new Chart(ctx, {
-                        type: 'bar',
-                        data: {
-                            labels: ['CSE'],
-                            datasets: 
-                            [{
-                                label: 'Students',
-                                data: ['250'],
-                                backgroundColor: 'transparent',
-                                borderColor:'rgba(0,128,0)',
-                                borderWidth: 3
-                            }]
-                        },
-                     
-                        options: {
-                            scales: {scales:{yAxes: [{beginAtZero: false}], xAxes: [{autoskip: true, maxTicketsLimit: 20}]}},
-                            tooltips:{mode: 'index'},
-                            legend:{display: true, position: 'top', labels: {fontColor: 'rgb(255,255,255)', fontSize: 16}}
-                        }
-                    });
-                    </script>
-                </div>
-                <div class="myChart03">	
-                        <canvas id="chartBarTotalLand" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
-                        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-            
-                        <script>
-                            var ctx = document.getElementById("chartBarTotalLand").getContext('2d');
-                            var myChart = new Chart(ctx, {
-                            type: 'bar',
-                            data: {
-                                labels: ['EEE'],
-                                datasets: 
-                                [{
-                                    label: 'Students',
-                                    data: ['103'],
-                                    backgroundColor: 'transparent',
-                                    borderColor:'rgba(0,128,0)',
-                                    borderWidth: 3
-                                }]
-                            },
-                         
-                            options: {
-                                scales: {scales:{yAxes: [{beginAtZero: false}], xAxes: [{autoskip: true, maxTicketsLimit: 20}]}},
-                                tooltips:{mode: 'index'},
-                                legend:{display: true, position: 'top', labels: {fontColor: 'rgb(255,255,255)', fontSize: 16}}
-                            }
-                        });
-                        </script>
-                    </div>
-                    <div class="myChart04">	
-                            <canvas id="chartBarTotalLand" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
-                            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-                
-                            <script>
-                                var ctx = document.getElementById("chartBarTotalLand").getContext('2d');
-                                var myChart = new Chart(ctx, {
-                                type: 'bar',
-                                data: {
-                                    labels: ['ENV'],
-                                    datasets: 
-                                    [{
-                                        label: 'Students',
-                                        data: ['50'],
-                                        backgroundColor: 'transparent',
-                                        borderColor:'rgba(0,128,0)',
-                                        borderWidth: 3
-                                    }]
-                                },
-                             
-                                options: {
-                                    scales: {scales:{yAxes: [{beginAtZero: false}], xAxes: [{autoskip: true, maxTicketsLimit: 20}]}},
-                                    tooltips:{mode: 'index'},
-                                    legend:{display: true, position: 'top', labels: {fontColor: 'rgb(255,255,255)', fontSize: 16}}
-                                }
-                            });
-                            </script>
-                        </div>
-
-	    <br><br><br>
-      <div style="text-align: center; padding: 5px 0px;">
+      <div style="text-align: center; padding: 50px 0px;">
       <button class="btn btn-warning loadBtn" style="display: inline-block;">Load Chart</button>
       <button class="btn btn-success" style="display: inline-block;">Download as Pdf</button>
       </div>
+      <!--
       <footer>          
             <p>All rights reserved to @IUB and @Believers.org </p>
         </footer> 
+      -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="department.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
